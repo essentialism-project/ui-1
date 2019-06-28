@@ -246,6 +246,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-content: space-around;
+  flex-wrap: nowrap;
 }
 .nav-link{ 
   display: flex;
