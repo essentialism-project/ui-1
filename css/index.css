@@ -249,7 +249,6 @@ html {
   justify-content: space-between;
   align-content: space-around;
 }
-
 .nav-link{ 
   display: flex;
   align-items: center;
@@ -265,7 +264,6 @@ html {
     display: none;
   }
 }
-
 .nav-link-mobile{
   display: none;
 }
@@ -284,7 +282,15 @@ html {
   display: flex;
   width: 100%;
   background: #282828;
+  padding-right: 10%;
 }
+@media (max-width: 556px){
+  .motto-home{
+  padding-bottom: 10%;
+  }
+}
+
+
 /* Motto */
 .home-memo{
   display: flex;
@@ -294,16 +300,14 @@ html {
   margin-left: 5.5%;
   color: #FFFFFF;
 }
-/* @media (max-width: 500px) { */
-  @media (max-width: 556px) {
-    .home-memo{
-      height: 20rem;
-      width: 80%;
-      /* background-image: url("main-girl.svg");
-      background-size: auto 100%;
-      background-repeat: no-repeat; */
-    }
+@media (max-width: 556px) {
+  .home-memo{
+    height: 20rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
   }
+}
 .home-memo h1{
   font-size: 4rem;
   line-height: 4.55rem;
@@ -372,8 +376,8 @@ html {
 }
 @media (max-width: 556px) {
   .main-image{
-    display: none;
-    /* margin-top: 0%; */
+    transform: scaleX(-1);
+    margin-left: 25%;
   }
 }
 
