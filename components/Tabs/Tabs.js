@@ -36,3 +36,8 @@ function updateActive(item){
   topicTab = document.querySelector(`.tab[data-tab='${clickedTab}']`);
   topicTab.style.borderBottom= "5px solid white";
 }
+
+
+let btnSignIn = document.querySelector('.contact-form .btn');
+btnSignIn.addEventListener("click", () => 
+        location.href = "https://wizardly-swirles-43fdf7.netlify.com/login");
