@@ -290,7 +290,6 @@ html {
   }
 }
 
-
 /* Motto */
 .home-memo{
   display: flex;
@@ -716,39 +715,43 @@ width: 25%;
 }
 
 
-.pitch{
-  padding: 3%;
+
+
+.about-pitch{
   display: flex;
   width: 100%;
   background: #282828;
-  padding-right: 10%;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; 
   color: #FFFFFF;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 5%;
+  padding-top: 5%;
 
 }
-
-
 
 .about-motto{
-  margin: 3%;
+  margin: 2%;
   display:flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
+} 
+
+.about-pitch h5{   
+  font-size: 4vw;
+  line-height: 4.55vw;
+  letter-spacing: 0.0vw;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.pitch h5{   
-  font-size: 4rem;
-  line-height: 4.55rem;
-  letter-spacing: 0.02em;
-}
-
-.pitch p{
-  color: #FFFFFF;
-  font-size: 1.2rem;
-  letter-spacing: 0.04em;
+.about-pitch p{
+  padding-top: 5%;
+  color: #E5E5E5;
+  font-size: 1.2vw;
+  line-height: 1.8vw;
+  letter-spacing: 0.04vw;
+  font-weight: normal;
+  padding-right: 2%;
 }
 
 iframe{
@@ -759,11 +762,56 @@ iframe{
   
 }
 
-
-
-
 .meet-the-team{
-display: flex;
 background-image: url("main-feedback.jpg");
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color:#565656;
+background-repeat: no-repeat;
+background-size:100% 100%;
+width: 100%;
+height: 100%;
+padding-bottom: 5%;
 }
 
+.meet-the-team h5{
+  width: 100%;
+  font-size: 4vw;
+  line-height: 4.55vw;
+  letter-spacing: 0.0vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.members{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* padding-left: 15%; */
+}
+
+
+.team-member{
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-member h4{
+  font-size: 1.5vw;
+  line-height: 3.1vw;
+  letter-spacing: 0.05vw;
+}
+
+.member-image{
+  padding-top: 10%;
+  width: 50%;
+}
