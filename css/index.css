@@ -714,9 +714,6 @@ width: 25%;
   padding-right:7%;
 }
 
-
-
-
 .about-pitch{
   display: flex;
   width: 100%;
@@ -727,7 +724,15 @@ width: 25%;
   padding-right: 2%;
   padding-bottom: 5%;
   padding-top: 5%;
-
+}
+@media (max-width: 556px) {
+  .about-pitch{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2%;
+    padding-bottom: 5%;
+  }
 }
 
 .about-motto{
@@ -743,6 +748,12 @@ width: 25%;
   display: flex;
   justify-content: flex-start;
 }
+@media (max-width: 556px) {
+  .about-pitch h5{   
+    font-size: 5vw;
+    line-height: 5vw;
+  }
+}
 
 .about-pitch p{
   padding-top: 5%;
@@ -753,13 +764,29 @@ width: 25%;
   font-weight: normal;
   padding-right: 2%;
 }
+@media (max-width: 556px) {
+  .about-pitch p{
+    padding-top: 3%;
+    color: #E5E5E5;
+    font-size: 2.8vw;
+    line-height: 3vw;
+    font-weight: normal;
+  }
+}
 
 iframe{
   width: 560px; 
   height: 315px;
   margin: 2%;
   padding-right: 10%;
-  
+}
+@media (max-width: 556px) {
+  iframe{
+    width: 500px; 
+    height: 315px;
+    margin: 2%;
+    padding-right: 10%;
+  }
 }
 
 .meet-the-team{
@@ -776,6 +803,7 @@ height: 100%;
 padding-bottom: 5%;
 }
 
+
 .meet-the-team h5{
   width: 100%;
   font-size: 4vw;
@@ -787,13 +815,19 @@ padding-bottom: 5%;
   padding-bottom: 5%;
   padding-top: 5%;
 }
+@media (max-width: 556px) {
+  .meet-the-team h5{
+    font-size: 5vw;
+    line-height: 5vw;
+  }
+}
+
 
 .members{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* padding-left: 15%; */
 }
 
 
@@ -803,6 +837,12 @@ padding-bottom: 5%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 3%;
+}
+@media (max-width: 556px) {
+  .team-member{
+    width: 100%;
+  }
 }
 
 .team-member h4{
@@ -810,8 +850,21 @@ padding-bottom: 5%;
   line-height: 3.1vw;
   letter-spacing: 0.05vw;
 }
+@media (max-width: 556px) {
+  .team-member  h4{
+    padding-top: 5%;
+    font-size: 4vw;
+    line-height: 4vw;
+  }
 
 .member-image{
   padding-top: 10%;
-  width: 50%;
+  width: 30%;
 }
+@media (max-width: 556px) {
+  .member-image{
+  padding-top: 2%;
+  width: 50%;}
+}
+}
+
