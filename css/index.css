@@ -244,6 +244,7 @@ input {
 /* Motto and sign in */
 .motto-home{
   display: flex;
+  width: 100%;
   background: #282828;
 }
 /* Motto */
@@ -338,8 +339,6 @@ input {
   }
 }
 
-
-
 /* Contact-form */
 .contact-form{
   display: flex;
@@ -392,7 +391,7 @@ input {
   align-items: center;
 
   margin-top: 13%;
-  margin-left: 55%;
+  margin-left: 56%;
 
   width: 7.9rem;
   height: 3.1rem;
@@ -405,93 +404,139 @@ input {
   letter-spacing: 0.05rem;
 }
 
-
-
-
-
 /* All Tabs */
 .tabs-home{
   display:flex;
   flex-direction: column;
-  background: #FFFFFF;
   width: 100%;
-  /* background:red; */
-  /* margin-top: 10%;
-  margin-bottom: 10%; */
-  padding-top: 7%;
-  padding-bottom: 7%;
+  margin-left: 7%;
+  color:#565656;
+  padding-bottom: 1%;
+  /* margin-right: 17%; */
 }
-
-.tabs{
-  /* background: green; */
-}
-
-.tabs-home .tabs .topics{
+.topics{
   display: flex;
-  width: 100%;
   justify-content: space-around;
-  align-items: center;
-  /* width: 1208px;
-  height: 64px; */
-  border: 5px solid #C4C4C4;
-  /* margin-left: 7%;
-  margin-right: 10%; */
-  /* margin-top: 7%; */
-  /* border-bottom: 5px solid white; */
+  /* align-items: center; */
 
-  /* background: blue; */
+  width: 84.5%;
+  height: 4.6rem;
+  margin-top: 15%;
+
+  /* border: 5px solid #C4C4C4; */
 }
+@media (max-width: 556px) {
+  .topics{
+    margin-top: 5%;
+  }
+}
+
 
 .tabs-home .tab{
+  width: 26rem;
   border: 5px solid #C4C4C4;
-  /* width: 302px;
-  height: 64px ; */
+  height: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* background: yellow; */
 }
+@media (max-width: 556px) {
+  .tabs-home .tab{
+    border: 2px solid #C4C4C4;
+    text-align: center;
+    font-weight: bold;
+    height: 60%;
+    margin-top: 0%;
+    padding-top: 0%;
+  }
+}
+
+
+
 
 .content-tabs{
   display: none;
-  /* width: 1208px;
-  height: 576px; */
-  margin-left: 7%;
-  margin-right: 10%;
-  /* display: flex; */
   justify-content: space-around;
-  /* justify-content: center; */
   align-items: center;
+
+  width: 84.5%;
+  height: 37rem;
+
+  margin: 0%;
   border: 5px solid #C4C4C4;
-  border-top: 5px solid white;
 }
+@media (max-width: 556px) {
+  .content-tabs{
+    width: 84.5%;
+    height: 27rem;
+    flex-direction: column;
+    border: 2px solid #C4C4C4;
+    margin-top: 0%;
+    padding-top: 0%;
+  }
+}
+
 
 .tabs-image{
-  width: 457px;
-  height: 320px;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 20%;
-  margin-bottom: 10%;
+  display: flex;
+  width: 45rem;
+  height: 100%;
+
+  margin-left: 10%;
+  margin-right: 10%;
 }
+
+@media (max-width: 556px) {
+  .tabs-home .tabs-image{
+    display: flex;
+    justify-content: center;
+    
+    margin: 0%;
+    width: 20rem;
+    height: 90%;
+    padding-top: 0%; 
+  }
+}
+
 
 .tabs-text{
-  /* width: 560px;
-  height: 199px; */
-  margin-right: 5%;
-  margin-top: 10%;
-  margin-bottom: 10%;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 25px;
-  line-height: 48px;
+  display: flex;
+  align-content: center;
+  width: 100%;
+  margin: 0%;
+  padding-top: 0%;
+  padding-bottom: 5%;
+  padding-left: 3%;
+  padding-right: 5%;  
+  font-size: 1.6rem;
+  line-height: 3.5rem;
 }
+@media (max-width: 556px) {
+  .tabs-text{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: flex;
+  /* align-content: center;
+  justify-content: center; */
+  text-align: center;
+  padding-top: 1%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Feedback */
 .feedback-home{
+  width: 100%;
   background-image: url("main-feedback.jpg");
   /* width:1440px;
   height: 472px; */
@@ -507,15 +552,6 @@ input {
 
 
 .main-feedback-text{
-  /* align-content: stretch; */
-  /* width: 812px;
-  height: 130px; */
-  /* font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 35px;
-line-height: 50px; */
-/* or 143% */
 
 display: flex;
 /* align-items: center; */
@@ -529,6 +565,7 @@ color: #565656;
 
 
 .footer-home{
+  width: 100%;
   border-top: 2px solid #B8DEDA;
   background: #FFFFFF;
   /* width:1440px;
